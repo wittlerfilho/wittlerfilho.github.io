@@ -72,7 +72,7 @@ a {
 #main__first-section {
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    /* height: 100vh;     */
+    height: 100vh;
 }
 
 #main__first-section_div {
@@ -165,3 +165,95 @@ a {
     left: 750px;
     width: 400px;
 }
+
+
+/* Quotes section */
+
+#main__quotes-section {
+    height: 100vh;
+
+    background-image: url(../imagens/imagem-background.png);
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: bottom;
+    background-size: 250px;
+}
+
+#main__quotes-section_title {
+    color: #727264;
+    font-size: 3.5rem;
+
+    margin: 1rem 0rem 0rem 1rem;
+    padding-top: 3rem;
+}
+
+#main__quotes-section_div-imgs {
+    margin-left: 5rem;
+    grid-column-start: 1;
+}
+
+.main__quotes-section_div-imgs_images {
+    width: 100px;
+}
+
+.main__quotes-section_div-imagem-livro_imgs {
+    position: absolute;
+    z-index: -1;
+    right: 200px;
+}
+
+.main__quotes-section_div-imagem-livro_imgs:nth-child(1) {
+    top: 110%;
+    width: 500px;
+}
+
+
+.main__quotes-section_div-imagem-livro_imgs:nth-child(2) {
+    top: 150%;
+}
+
+#main__quotes-section_div-quotes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.main__quotes-section_div-quotes_quote {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0rem 4rem;
+}
+
+.main__quotes-section_div-quotes_quote:last-child {
+    margin-left: 10rem;
+}
+
+.main__quotes-section_div-quotes_quote_quote-text {
+    display: inline-block;
+    text-align: justify;
+
+    color: #727764;
+    font-size: 1.5rem;
+}
+
+.main__quotes-section_div-quotes_quote_quote-blob {
+    margin-left: -5rem;
+    z-index: -1;
+}
+
+.main__quotes-section_div-quotes_quote_quote-blob:first-child {
+    margin-right: -5rem;
+    z-index: -1;
+}
+
+.main__quotes-section_div-quotes_quote_quote-blob:last-child {
+    margin-left: -5rem;
+    z-index: -1;
+}
+
+/* Books section */
+
+
