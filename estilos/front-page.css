@@ -256,4 +256,137 @@ a {
 
 /* Books section */
 
+#main__books-section {
+    height: 100vh;
+}
 
+#main__books-section_div-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 1.5rem;
+}
+
+#main__books-section_div-title_title {
+    color: #6B705C;
+    font-size: 5rem;
+}
+
+#main__books-section_div-title_subtitle {
+    color: #727764;
+    font-size: 2.5rem;
+    font-family: Borna;
+}
+
+#main__books-section_div-books {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    padding-top: 2rem;
+}
+
+.main__books-section_div-books_book_book-img {
+    display: inline-block;
+    border-radius: 11px;
+    line-height: 10px;
+    width: 250px;
+}
+
+.main__books-section_div-books_book_book-title {
+    color: #E8EBEB;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    align-self: center;
+}
+
+.main__books-section_div-books_book {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #6B705C;
+    border: 10px solid #6B705C;
+    border-radius: 20px;
+}
+
+.main__books-section_div-books_book_small-book-img {
+    width: 160px;
+}
+
+#main__books-section_div-redirect {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+
+    margin: 1rem;
+}
+
+#main__books-section_div-redirect_text {
+    font-family: Dirtyline;
+    font-size: 1.8rem;
+    color: #727264;
+
+    padding: 2rem 1rem 0rem 1rem;
+}
+
+#main__books-section_div-redirect_button {
+    display: flex;
+    align-items: center;
+
+    border: 2px solid #4D4F49;
+    background-color: #4D4F49;
+    border-radius: 11px;
+    
+    height: 2.4rem;
+}
+
+#main__books-section_div-redirect_button_text {
+    color: #E8EAEA;
+    font-family: Borna;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-left: 0.5rem;
+
+
+    background: url(../imagens/iconeSeta.svg) no-repeat right center;
+   padding-right: 3rem;
+
+}
+
+/* Footer */
+
+#footer {
+    height: 30vh;
+    margin: 1rem 5% 1rem 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #32332F;
+    border-radius: 10px;
+
+    color: white;
+    
+}
+
+#footer_copyrights_copyright-text {
+    color: #E8EBEB;
+}
+
+#footer__contact {
+    display: flex;
+    width: 14rem;
+    justify-content: space-between;
+}
+
+#footer__contact_contact-us_header, #footer__contact_follow-us_header {
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+.footer__contact_contact-us_list_li > a, .footer__contact_follow-us_li > a {
+    color: #E8EBEB;
+}
