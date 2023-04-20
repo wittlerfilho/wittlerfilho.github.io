@@ -6,15 +6,16 @@
 
 @font-face {
     font-family: Borna;
-    src:url("../fontes/Borna-Medium.otf");
+    src: url("../fontes/Borna-Medium.otf");
 }
 
 @font-face {
     font-family: DirtyLine;
-    src:url("../fontes/DirtyLine.otf");
+    src: url("../fontes/DirtyLine.otf");
 }
 
-h1, h2 {
+h1,
+h2 {
     font-family: DirtyLine;
 }
 
@@ -33,7 +34,7 @@ a {
 
 #header {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
 
     font-family: Borna;
 
@@ -72,7 +73,7 @@ a {
 #main__first-section {
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 #main__first-section_div {
@@ -98,7 +99,7 @@ a {
     font-family: DirtyLine;
     color: #989C8D;
     font-size: 2rem;
-    
+
     margin-top: 0.5rem;
 }
 
@@ -119,7 +120,7 @@ a {
     border-radius: 11px;
 
     padding: 0.8rem 1rem 0.8rem 1rem;
-    font-size: 1rem;    
+    font-size: 1rem;
     text-align: center;
 
 }
@@ -130,7 +131,7 @@ a {
 
 #main__first-section_div-buttons_button-read {
     background: #4D4F49;
-    transition: .2s ease,color.2s ease,box-shadow.2s ease;
+    transition: .2s ease, color.2s ease, box-shadow.2s ease;
 }
 
 #main__first-section_div-buttons_button-read:hover {
@@ -170,7 +171,7 @@ a {
 /* Quotes section */
 
 #main__quotes-section {
-    height: 100vh;
+    /* height: 100vh; */
 
     background-image: url(../imagens/imagem-background.png);
     background-repeat: no-repeat;
@@ -256,10 +257,6 @@ a {
 
 /* Books section */
 
-#main__books-section {
-    height: 100vh;
-}
-
 #main__books-section_div-title {
     display: flex;
     flex-direction: column;
@@ -339,7 +336,7 @@ a {
     border: 2px solid #4D4F49;
     background-color: #4D4F49;
     border-radius: 11px;
-    
+
     height: 2.4rem;
 }
 
@@ -352,7 +349,7 @@ a {
 
 
     background: url(../imagens/iconeSeta.svg) no-repeat right center;
-   padding-right: 3rem;
+    padding-right: 3rem;
 
 }
 
@@ -368,7 +365,7 @@ a {
     border-radius: 10px;
 
     color: white;
-    
+
 }
 
 #footer_copyrights_copyright-text {
@@ -381,12 +378,313 @@ a {
     justify-content: space-between;
 }
 
-#footer__contact_contact-us_header, #footer__contact_follow-us_header {
+#footer__contact_contact-us_header,
+#footer__contact_follow-us_header {
     color: white;
     font-size: 1.5rem;
 }
 
 
-.footer__contact_contact-us_list_li > a, .footer__contact_follow-us_li > a {
+.footer__contact_contact-us_list_li>a,
+.footer__contact_follow-us_li>a {
     color: #E8EBEB;
+}
+
+
+
+
+/* Media queries */
+
+@media screen and (max-width: 767px) {
+
+    #main {
+        overflow: hidden;
+    }
+
+    /*  HEADER */
+
+    #header {
+        flex-direction: column;
+    }
+
+    #header__title {
+        margin-bottom: 1rem;
+    }
+
+    #header__ul {
+        justify-content: center;
+    }
+
+    .header__ul_li {
+        margin: 0rem 1rem 0rem 0rem;
+    }
+
+    .header__ul_li:last-of-type {
+        margin-right: 0;
+    }
+
+
+    /*  MAIN FIRST SECTION */
+
+    #main__first-section {
+        visibility: visible;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    #main__first-section_div {
+        margin: 2rem;
+    }
+
+    #main__first-section_div-imagens-titulo {
+        text-align: center;
+    }
+
+    .main__first-section_div_imagens-titulo {
+        width: 100px;
+    }
+
+    #main__first-section_div-quote_frase {
+        font-size: 1.7rem;
+    }
+
+    #main__first-section_div-quote_autor {
+        font-size: 1.5rem;
+    }
+
+    #main__first-section_div-buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #main__first-section_div-images {
+        display: none;
+    }
+
+    .main__first-section_div-images_images {
+        display: inline-block;
+        position: inherit;
+        display: none;
+    }
+
+
+    /* MAIN QUOTES SECTION*/
+
+    #main__quotes-section {
+        visibility: visible;
+        height: auto;
+        background: none;
+    }
+
+    #main__quotes-section_title {
+        font-size: 2.5rem;
+        margin: 0;
+        text-align: center;
+    }
+
+    #main__quotes-section_div-imgs {
+        margin: 0;
+        text-align: center;
+    }
+
+    .main__quotes-section_div-imgs_images {
+        width: 50px;
+    }
+
+    #main__quotes-section_div-imagem-livro {
+        display: none;
+    }
+
+    .main__quotes-section_div-imagem-livro_imgs {
+        position: inherit;
+        z-index: inherit;
+        right: 0;
+        display: none;
+    }
+
+    .main__quotes-section_div-quotes_quote,
+    .main__quotes-section_div-quotes_quote:last-child {
+        margin: 1rem;
+    }
+
+    .main__quotes-section_div-quotes_quote_quote-blob {
+        margin-left: 0;
+    }
+
+
+    /* MAIN BOOKS SECTION */
+
+    #main__books-section {
+        visibility: visible;
+        height: auto;
+    }
+
+    #main__books-section_div-title_title {
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    #main__books-section_div-title_subtitle {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .main__books-section_div-books_book:first-of-type,
+    .main__books-section_div-books_book:last-of-type {
+        display: none;
+    }
+
+    .main__books-section_div-books_book_book-img {
+        width: 200px;
+    }
+
+    #main__books-section_div-redirect {
+        flex-direction: column;
+    }
+
+    #main__books-section_div-redirect_text {
+        font-size: 2rem;
+    }
+
+
+
+    /* FOOTER */
+
+    #footer {
+        visibility: visible;
+        flex-direction: column;
+    }
+
+    #footer__copyrights {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+
+    #footer__copyrights_logo-img {
+        width: 100px;
+    }
+
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #main__first-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: inherit;
+    }
+
+    #main__first-section_div {
+        margin: 3rem;
+    }
+
+    #main__first-section_div-imagens-titulo {
+        text-align: center;
+    }
+
+
+    #main__first-section_div-images {
+        display: none;
+    }
+
+    /* Quotes section  */
+
+    #main__quotes-section {
+        height: 142vh;
+    }
+
+    #main__quotes-section_title {
+        font-size: 2.7rem;
+    }
+
+    #main__quotes-section_div-imgs {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .main__quotes-section_div-imagem-livro_imgs {
+        width: 100px;
+    }
+
+    .main__quotes-section_div-imagem-livro_imgs:nth-child(1) {
+        width: 100px;
+        top: 674px;
+        right: 30px;
+    }
+
+    .main__quotes-section_div-imagem-livro_imgs:nth-child(2) {
+        top: 896px;
+        right: 1px;
+    }
+
+    #main__quotes-section_div-quotes {
+        flex-direction: column;
+        align-items: center;
+        /* height: 100vh; */
+        justify-content: space-around;
+    }
+
+    .main__quotes-section_div-quotes_quote:last-child {
+        margin: 0;
+    }
+
+    .main__quotes-section_div-quotes_quote:last-child {
+        width: 400px;
+    }
+
+
+    /* Books section */
+
+    #main__books-section {
+        height: inherit;
+    }
+
+    #main__books-section_div-title_subtitle {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .main__first-section_div-images_images:nth-child(1) {
+        width: 514px;
+    }
+    
+    .main__first-section_div-images_images:nth-child(2) {
+        width: 299px;
+    }
+    
+    .main__first-section_div-images_images:nth-child(3) {
+        width: 540px;
+    }
+    
+    .main__first-section_div-images_images:nth-child(4) {
+        width: 276px;
+    }
+
+    .main__quotes-section_div-imagem-livro_imgs:first-child {
+        width: 271px;
+        right: 10px;
+    }
+
+    .main__quotes-section_div-imagem-livro_imgs:last-child {
+        width: 126px;
+        right: 10px;
+        top: 857px;
+    }
+
+    .main__quotes-section_div-quotes_quote {
+        width: 500px;
+    }
+
+    #main__books-section {
+        height: inherit;
+    }
+    
 }
