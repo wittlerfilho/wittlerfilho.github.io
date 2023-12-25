@@ -73,10 +73,11 @@ a {
 }
 
 .header__ul_li_a {
-    transition: all 0.24s ;
+    transition: all 0.24s;
 }
+
 .header__ul_li_a:hover {
-    color: color-mix(in srgb, #6B705C 75%, black );
+    color: color-mix(in srgb, #6B705C 75%, black);
 }
 
 /* Main section */
@@ -300,7 +301,7 @@ a {
 }
 
 #main__books-section_div-title_subtitle {
-    color:  #727764;
+    color: #727764;
     font-size: 2.2rem;
     font-family: Borna;
     letter-spacing: 0.3rem;
@@ -334,7 +335,7 @@ a {
     flex-direction: column;
     align-items: center;
 
-    background-color: #6B705C; 
+    background-color: #6B705C;
     border: 10px solid #6B705C;
     border-radius: 20px;
 }
@@ -531,7 +532,7 @@ a {
     .header__ul_li {
         margin: 0rem 1rem 0rem 0rem;
     }
-    
+
 
 
     .header__ul_li:last-of-type {
@@ -545,7 +546,7 @@ a {
         visibility: visible;
         display: flex;
         flex-direction: column;
-        height: auto;
+        /* height: auto; */
     }
 
     #main__first-section_div {
@@ -589,13 +590,14 @@ a {
     #main__quotes-section {
         visibility: visible;
         height: auto;
-        background: none;
+        /* background: none; */
     }
 
     #main__quotes-section_title {
         font-size: 2.5rem;
-        margin: 0;
+        margin-top: -5rem;
         text-align: center;
+        padding-top: 0rem;
     }
 
     #main__quotes-section_div-imgs {
@@ -670,6 +672,8 @@ a {
     #footer {
         visibility: visible;
         flex-direction: column;
+        height: auto;
+        padding: 1rem;
     }
 
     #footer__copyrights {
@@ -693,11 +697,19 @@ a {
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: inherit;
     }
 
     #main__first-section_div {
         margin: 3rem;
+    }
+
+    #main__first-section_div-buttons_button-know-more {
+        background-color: color-mix(in srgb, #6b705C 80%, black);
+    }
+
+    #main__first-section_div-buttons_button-know-more:hover {
+        background-color:
+            color-mix(in srgb, #6b705C 60%, black);
     }
 
     #main__first-section_div-imagens-titulo {
@@ -711,9 +723,7 @@ a {
 
     /* Quotes section  */
 
-    #main__quotes-section {
-        height: 142vh;
-    }
+    #main__quotes-section {}
 
     #main__quotes-section_title {
         font-size: 2.7rem;
@@ -761,8 +771,20 @@ a {
         height: inherit;
     }
 
+    #main__books-section_div-books {
+        padding: 3rem 0 0 0;
+    }
+
+    #main__books-section_div-title_title {
+        text-align: center;
+    }
+
     #main__books-section_div-title_subtitle {
-        font-size: 2rem;
+        font-size: 1.6rem;
+    }
+
+    #footer {
+        padding: 1rem;
     }
 }
 
@@ -781,6 +803,7 @@ a {
 
     .main__first-section_div-images_images:nth-child(4) {
         width: 276px;
+        left: 779px;
     }
 
     .main__quotes-section_div-imagem-livro_imgs:first-child {
